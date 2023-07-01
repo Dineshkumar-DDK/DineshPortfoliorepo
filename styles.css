@@ -1,0 +1,248 @@
+/* F5FFC6-white
+ B4E1FF-green
+ AB87FF-brown
+ FFACE4-pink
+ C1FF9B-paalpacha
+
+ /*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+
+  */
+/*-------global styles------------------*/
+html{
+    box-sizing: border-box;
+
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+   color:#343434 ;
+   font-family: sans-serif;
+   /* margin:0px;
+   padding:0px;-- this doesn't work so I used inline css to avoid the default 8px padding */
+   
+  
+}
+
+h1{
+    font-size:85px;
+    padding-top:20px;
+    
+    
+}
+
+
+h1,h2{
+    
+    font-family: 'Kaushan Script', cursive;
+    font-weight:400;
+    margin:0;
+   
+
+}
+
+img{
+    width:300px;
+    margin-bottom:8px;
+
+}
+
+a{
+    color:#FFE66D;
+
+}
+
+a:hover{
+    text-decoration: none; /*no underline for the linK when hover over*/
+}
+
+.content-wrap{
+    max-width: 900px;
+    width: 85%;
+    margin:0 auto;
+    padding:60px 0;
+    /* the above code to eliminate-a line occurs between each section and these comes from the paragraph and head elements */
+}
+h3{
+    margin-bottom:5px;
+}
+
+.edu-details h3+p{
+    font-style: italic;
+}
+.edu-details h3~p{
+    margin:0;
+}
+
+.divider > section{
+    border-bottom: 1px dashed #343434;
+    padding:25px 0; 
+}
+.divider >section:last-of-type{
+    border:none;
+}
+
+/*-------Profile------------------*/
+header{
+    background:#2F3061 ;
+    color:#F7FFF7;
+    
+}
+
+
+
+/*-------work Experience-----------------*/
+/* .workExperience{
+    background:A1C6D7;
+} */
+
+
+/*-------Projects------------------*/
+.projects{
+    background:#F7FFF7;
+}
+
+.projects a{
+    color:#343434;
+}
+
+.projects .btn{
+    color:#F7FFF7;
+    background:#2F3061;
+    text-decoration: none;
+    padding:6px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover{
+    background:rgba(47,48,97,80%);
+    
+
+}
+
+.project-item{
+    overflow: hidden;
+   
+   
+    
+}
+
+
+.project-item h3{
+    margin-top:0;
+}
+
+/* self clear must be added to the parent element*/
+
+/*-------Certifications---------------*/ 
+.certifi{
+    background:#A1C6D7;
+    
+}
+.certifi img{
+    margin: 5px;
+    
+}
+
+
+
+  .certdetails{
+    margin-top:0;
+   
+  }
+   .details img{
+    margin-left:0;
+    /* padding-right: 20px; */
+    /* text-align: center; */
+  } 
+ 
+
+
+/*-------Education------------------*/
+
+/* shorthand for background 
+background:url() no-repeat top-right/cover
+position always followed by size . if no position- use long hand property for size
+*/
+
+.education{
+    background:url(./images/sharon-mccutcheon-unsplash.jpg) no-repeat right/cover;
+    padding-bottom: 100px;
+}
+
+.education > p{
+    width:50%;
+}
+
+
+/*-------contact info------------------*/
+
+footer{
+    background:#343434;
+    color:#F7FFF7;   
+}
+
+.contact-list{
+    list-style-type: none;
+    padding:0;  
+}
+
+
+.contact-list a{
+    padding:20px;
+    display:inline-block;/* inline contents - not reponsive to padding and margin*/
+}
+
+/*-------responsive------------------*/
+@media all and (min-width:550px){
+    header,footer{
+        text-align: center;
+    }
+    .project-item img{
+        margin-right: 20px;
+        float: left;
+    }
+    .certifyimg {
+        display: grid;
+        grid-template-columns:auto auto auto;
+        padding: 10px;
+        padding-left:0;
+        column-gap: 20px;
+      }
+      .contact-list{
+        display:flex;
+        justify-content: center;
+    
+    }
+}
+        
+
+@media all and (max-width:549px){
+    h1{
+        font-size: 65px;
+        line-height:1;
+        margin-bottom: 15px;
+       
+    }
+    h2{
+        line-height:1;
+    }
+
+
+    .contact-list a{
+        padding:5px;
+    }
+}
+
+/* webfx.com--to change hex to rgb */
