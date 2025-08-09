@@ -1,9 +1,40 @@
+/*-------Profile------------------*/
 
 header h1,header h2,header p {
     animation:clear 0.8s 0.4s forwards;
     opacity:0;
     transform:translateY(300px) scale(1.2)
 }
+
+nav {
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#2F3061 ;
+    color:#F7FFF7;
+}
+nav a{
+    /* text-decoration:none; */
+    opacity:0;
+    animation:clear 2s 1s forwards;
+}
+.content-wrap-nav{
+   
+    max-width: 900px;
+    width: 85%;
+    margin:0 auto;
+    padding:20px  0 20px 0;
+    display:flex;
+    justify-content:space-evenly;
+
+}
+
+nav a:hover{
+    text-decoration:none;
+    scale(1);
+}
+
+
 
 @keyframes clear{
     to{
