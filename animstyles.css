@@ -1,0 +1,13 @@
+
+header h1,header h2,header p {
+    animation:clear 0.8s 0.4s forwards;
+    opacity:0;
+    transform:translateY(300px) scale(1.2)
+}
+
+@keyframes clear{
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
