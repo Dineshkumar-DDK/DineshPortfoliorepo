@@ -31,8 +31,6 @@ body{
    font-family: sans-serif;
    /* margin:0px;
    padding:0px;-- this doesn't work so I used inline css to avoid the default 8px padding */
-   
-  
 }
 
 h1{
@@ -100,9 +98,7 @@ header{
     
 }
 
-header .content-wrap>p:last-of-type{
-    margin:16px 0px 0px 0px;
-}
+
 
 
 
