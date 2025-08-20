@@ -1,0 +1,75 @@
+
+
+
+
+.navt{
+   position: fixed;      
+    bottom: 20px;         
+    right: 20px;           
+    background:#b5bab6ff;  
+    padding: 10px 15px;
+    border-radius: 50%;   
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    z-index: 10; 
+    opacity:0;
+}
+.nav-top {
+    position: fixed;      
+    bottom: 20px;         
+    right: 20px;           
+    background:#b5bab6ff;  
+    padding: 10px 15px;
+    border-radius: 50%;   
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    z-index: 10; 
+     opacity:1;      
+}
+
+
+/*-------Profile------------------*/
+
+header h1,header h2,header p {
+    animation:clear 0.8s 0.4s forwards;
+    opacity:0;
+    transform:translateY(300px) scale(1.2)
+}
+
+nav {
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#2F3061 ;
+    color:#F7FFF7;
+    opacity:0;
+}
+
+.content-wrap-nav{
+   
+    max-width: 900px;
+    width: 85%;
+    margin:0 auto;
+    padding:20px  0 20px 0;
+    display:flex;
+    justify-content:space-evenly;
+
+}
+
+nav a:hover{
+    text-decoration:none;
+    scale(1);
+}
+
+.in-body{
+    background: #b5bab6ff;
+    opacity:0;
+    animation:clear 0.5s 0.2s forwards;
+}
+
+
+
+@keyframes clear{
+    to{
+        opacity:1;
+        transform:none;
+    }
+}

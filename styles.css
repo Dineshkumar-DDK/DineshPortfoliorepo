@@ -19,6 +19,7 @@ https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 /*-------global styles------------------*/
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth; 
 
 }
 *,*:before, *:after{
@@ -30,8 +31,6 @@ body{
    font-family: sans-serif;
    /* margin:0px;
    padding:0px;-- this doesn't work so I used inline css to avoid the default 8px padding */
-   
-  
 }
 
 h1{
@@ -62,9 +61,7 @@ a{
 
 }
 
-a:hover{
-    text-decoration: none; /*no underline for the linK when hover over*/
-}
+
 
 .content-wrap{
     max-width: 900px;
@@ -73,6 +70,8 @@ a:hover{
     padding:60px 0;
     /* the above code to eliminate-a line occurs between each section and these comes from the paragraph and head elements */
 }
+
+
 h3{
     margin-bottom:5px;
 }
@@ -98,6 +97,11 @@ header{
     color:#F7FFF7;
     
 }
+
+
+
+
+
 
 
 
@@ -202,6 +206,10 @@ footer{
 .contact-list a{
     padding:20px;
     display:inline-block;/* inline contents - not reponsive to padding and margin*/
+}
+
+.contact-list a:hover{
+    text-decoration: none; /*no underline for the linK when hover over*/
 }
 
 /*-------responsive------------------*/

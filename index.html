@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh kumar D ,  Full-Stack-Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body style="margin:0; padding:0;font-family: 'Share Tech Mono', monospace; font-size:16px;font-weight: 700; line-height:1.5;">
-    <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
-        <div class="content-wrap">
-          <h1>Dinesh Kumar D</h1>
-          <h2>Full-Stack-Developer</h2>
 
-          <p>As a full-stack-developer, I specialize in creating robust web applications .</p>
-          <p>I have completed several certifications and projects to acquire the knowledge up to date.</p>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinesh kumar D , Full-Stack-Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animstyles.css">
+  <!-- jQuery CDN (latest version) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="./index.js"></script>
+</head>
 
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      
-        <section class="projects">
-        <div class="content-wrap divider">
-          <h2>Featured Projects</h2>
-          <p>View selected projects below. More information can be found at my Github repository</p>
+<body
+  style="margin:0; padding:0;font-family: 'Share Tech Mono', monospace; font-size:16px;font-weight: 700; line-height:1.5;">
+  <main id="home">
+    <!-- ***********************  ABOUT / PROFILE  *********************** -->
+    <header class="header-content">
+      <div class="content-wrap">
+        <h1>Dinesh Kumar D</h1>
+        <h2>Full-Stack-Developer</h2>
 
-          <!-- Project 1 -->
-          <section class="project-item">
-            
-            <img src="images/travel agency project.jpeg" alt="travel agency project">
-            <h3>Travel agency booking page</h3>
-            <p>Used Html, CSS, and Bootstrap CSS to complete this project</p>
-            <a class="btn" href="https://dineshkumar-ddk.github.io/TravelAgency/" target="_blank">View Live</a>
-          </section>
+        <p>As a full-stack-developer, I specialize in creating robust web applications .</p>
+        <p>I have completed several certifications and projects to acquire the knowledge up to date.</p>
 
-          <!-- Project 2 -->
-<!--           <section class="project-item">
+
+      </div>
+    </header>
+    <nav id="navbar">
+      <div class="content-wrap-nav">
+        <a href="#projectspace">Projects</a>
+        <a href="#certification">Certifications</a>
+        <a href="#edu">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+
+    <section id="projectspace" class="projects">
+      <div class="content-wrap divider">
+        <h2>Featured Projects</h2>
+        <p>View selected projects below. More information can be found at my Github repository</p>
+
+        <!-- Project 1 -->
+        <section class="project-item">
+
+          <img src="images/travel agency project.jpeg" alt="travel agency project">
+          <h3>Travel agency booking page</h3>
+          <p>Used Html, CSS, and Bootstrap CSS to complete this project</p>
+          <a class="btn" href="https://dineshkumar-ddk.github.io/TravelAgency/" target="_blank">View Live</a>
+        </section>
+
+        <!-- Project 2 -->
+        <!--           <section class="project-item">
             
             <img src="images/portfolio project.jpeg" alt="portfolio">
             <h3>Portfolio</h3>
@@ -50,100 +67,117 @@
             <a class="btn" href="#" target="_blank">View in Github</a>
           </section> -->
 
-          <!-- Project 2 -->
-          <section class="project-item">
-            
-            <img src="images/netflixclone.jpeg" alt="Netflix login page">
-            <h3>Netflix login page Clone</h3>
-            <p>This project resembles the Netflix login page</p>
-            <a class="btn" href="https://dineshkumar-ddk.github.io/NetflixLoginclonerepo/" target="_blank">View Live</a>
-            
-          </section>
-          <!-- Project 3 -->
-          <section class="project-item">
-            
-            <img src="images/Mojito.png" alt="Mojito hero image">
-            <h3>CockTail Business Landing Page</h3>
-            <p>An animated, tropical-themed cocktail landing page built with GSAP, blending bold typography and smooth transitions for an immersive visual experience</p>
-            <a class="btn" href="https://gsa-pproject.vercel.app/" target="_blank">View Live</a>
-            
-          </section>
+        <!-- Project 2 -->
+        <section class="project-item">
 
-           <!-- Project 4 -->
-          <section class="project-item">
-            
-            <img src="images/Studentmanagement.png">
-            <h3>Full-Stack CRUD Application</h3>
-            <p>A full-stack CRUD application built using React (frontend), Node.js and Express (backend), and styled with Material-UI</p>
-            <a class="btn" href="https://student-register-crud.vercel.app/" target="_blank">View Live</a>
-            
-          </section>
-        </div>
+          <img src="images/netflixclone.jpeg" alt="Netflix login page">
+          <h3>Netflix login page Clone</h3>
+          <p>This project resembles the Netflix login page</p>
+          <a class="btn" href="https://dineshkumar-ddk.github.io/NetflixLoginclonerepo/" target="_blank">View Live</a>
+
+        </section>
+        <!-- Project 3 -->
+        <section class="project-item">
+
+          <img src="images/Mojito.png" alt="Mojito hero image">
+          <h3>CockTail Business Landing Page</h3>
+          <p>An animated, tropical-themed cocktail landing page built with GSAP, blending bold typography and smooth
+            transitions for an immersive visual experience</p>
+          <a class="btn" href="https://gsa-pproject.vercel.app/" target="_blank">View Live</a>
+
         </section>
 
-      
+        <!-- Project 4 -->
+        <section class="project-item">
 
-      <!-- ******************  CERTIFICATION ****************** -->
-      <section class="certifi">  
-        <div class="content-wrap divider">
-          <h2>Certifications</h2>
-          <section class="certifyimg">
-            <div class="details"><img src="images/ARTIFICIAL INTELLIGENCE (AI)/1.jpg" alt="courses and certifications"></div>
-            <div class="details"><p class="certdetails">I have meticulously selected each course to ensure a profound comprehension of the fundamental concepts and principles essential to my professional growth. </p></div>
-          </section>
-          <section class="certifyimg">
-            <div class="details"><img src="./images/ARTIFICIAL INTELLIGENCE (AI)/2.jpg" alt="courses and certifications"></div>
-            <div class="details"><p class="certdetails">During my enrollment in the HDCA program at BSS, I gained a strong foundation in computer science fundamentals. This course provided me with a comprehensive understanding of essential concepts and principles. Additionally, I focused on honing my skills in PostgreSQL, a widely used database management system, to enhance my expertise in this critical area of software development. Equipped with a solid grasp of fundamental computer knowledge and proficient database management skills, I am well-prepared to contribute effectively in the technology field.</p></div>
-          </section>
-        </div>
-      </section>
+          <img src="images/Studentmanagement.png">
+          <h3>Full-Stack CRUD Application</h3>
+          <p>A full-stack CRUD application built using React (frontend), Node.js and Express (backend), and styled with
+            Material-UI</p>
+          <a class="btn" href="https://student-register-crud.vercel.app/" target="_blank">View Live</a>
+
+        </section>
+      </div>
+    </section>
 
 
-      <!-- ******************  EDUCATION ****************** -->
-      <section class="education bgimg">
-        <div class="content-wrap edu-details bgimg"> 
-          <h2>Education</h2>
 
-          <section>
-            <h3>Bachelor of Engineering(ECE)</h3>
-            <p>Graduated in 2020 with a CGPA of 7.15</p>
-            <p>Studied in Veltech HighTech Engineering College</p>
-          </section>
+    <!-- ******************  CERTIFICATION ****************** -->
+    <section id="certification" class="certifi">
+      <div class="content-wrap divider">
+        <h2>Certifications</h2>
+        <section class="certifyimg">
+          <div class="details"><img src="images/ARTIFICIAL INTELLIGENCE (AI)/1.jpg" alt="courses and certifications">
+          </div>
+          <div class="details">
+            <p class="certdetails">I have meticulously selected each course to ensure a profound comprehension of the
+              fundamental concepts and principles essential to my professional growth. </p>
+          </div>
+        </section>
+        <section class="certifyimg">
+          <div class="details"><img src="./images/ARTIFICIAL INTELLIGENCE (AI)/2.jpg" alt="courses and certifications">
+          </div>
+          <div class="details">
+            <p class="certdetails">During my enrollment in the HDCA program at BSS, I gained a strong foundation in
+              computer science fundamentals. This course provided me with a comprehensive understanding of essential
+              concepts and principles. Additionally, I focused on honing my skills in PostgreSQL, a widely used database
+              management system, to enhance my expertise in this critical area of software development. Equipped with a
+              solid grasp of fundamental computer knowledge and proficient database management skills, I am
+              well-prepared to contribute effectively in the technology field.</p>
+          </div>
+        </section>
+      </div>
+    </section>
 
-          <section>
-            <h3>HSC</h3>
-            <p>BIO-MATHS, 2015-2016</p>
-            <p>Raja National Matric Higher Secondary School</p>
-          </section>
 
-          <section>
-            <h3>SSLC</h3>
-            <p>General Studies, 2013-2014</p>
-            <p>Raja National Matric Higher Secondary School</p>
+    <!-- ******************  EDUCATION ****************** -->
+    <section id="edu" class="education bgimg">
+      <div class="content-wrap edu-details bgimg">
+        <h2>Education</h2>
 
-          </section>
-        </div>
-      </section>
+        <section>
+          <h3>Bachelor of Engineering(ECE)</h3>
+          <p>Graduated in 2020 with a CGPA of 7.15</p>
+          <p>Studied in Veltech HighTech Engineering College</p>
+        </section>
+
+        <section>
+          <h3>HSC</h3>
+          <p>BIO-MATHS, 2015-2016</p>
+          <p>Raja National Matric Higher Secondary School</p>
+        </section>
+
+        <section>
+          <h3>SSLC</h3>
+          <p>General Studies, 2013-2014</p>
+          <p>Raja National Matric Higher Secondary School</p>
+
+        </section>
+      </div>
+    </section>
 
 
-      
 
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
-        <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
 
-          <!-- Social media and contact links. Add or remove any networks. -->
-          <ul class="contact-list">
-            <li><a href="mailto:dinesh.dhamotharann@gmail.com">gmail</a></li>
-<!--             <li><a href="#" target="_blank">socialmedia</a></li> -->
-            <li><a href="https://github.com/Dineshkumar-DDK" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/dineshkumardhamotharan/" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
+    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+    <footer id="contact">
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
 
-      </footer>
-      
-    </main>
-  </body>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="contact-list">
+          <li><a href="mailto:dinesh.dhamotharann@gmail.com">gmail</a></li>
+          <!--             <li><a href="#" target="_blank">socialmedia</a></li> -->
+          <li><a href="https://github.com/Dineshkumar-DDK" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/dineshkumardhamotharan/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+
+    </footer>
+  </main>
+  <div id="backtotop" class="navt">
+    <a href="#home">up</a>
+  </div>
+</body>
+
 </html>
