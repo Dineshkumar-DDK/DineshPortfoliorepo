@@ -15,87 +15,94 @@ https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 */
 
 
-  */
+*/
+
 /*-------global styles------------------*/
-html{
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
 }
-*,*:before, *:after{
-    box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-body{
-   color:#343434 ;
-   font-family: sans-serif;
-   /* margin:0px;
+body {
+  color: #343434;
+  font-family: sans-serif;
+  /* margin:0px;
    padding:0px;-- this doesn't work so I used inline css to avoid the default 8px padding */
 }
 
-h1{
-    font-size:85px;
-    padding-top:20px;
-    
-    
-}
+h1 {
+  font-size: 85px;
+  padding-top: 20px;
 
-
-h1,h2{
-    
-    font-family: 'Kaushan Script', cursive;
-    font-weight:400;
-    margin:0;
-   
-
-}
-
-img{
-    width:300px;
-    margin-bottom:8px;
-
-}
-
-a{
-    color:#FFE66D;
 
 }
 
 
+h1,
+h2 {
 
-.content-wrap{
-    max-width: 900px;
-    width: 85%;
-    margin:0 auto;
-    padding:60px 0;
-    /* the above code to eliminate-a line occurs between each section and these comes from the paragraph and head elements */
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  margin: 0;
+
+
+}
+
+img {
+  width: 300px;
+  margin-bottom: 8px;
+
+}
+
+a {
+  color: #FFE66D;
+
 }
 
 
-h3{
-    margin-bottom:5px;
+
+.content-wrap {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+  /* the above code to eliminate-a line occurs between each section and these comes from the paragraph and head elements */
 }
 
-.edu-details h3+p{
-    font-style: italic;
-}
-.edu-details h3~p{
-    margin:0;
+
+h3 {
+  margin-bottom: 5px;
 }
 
-.divider > section{
-    border-bottom: 1px dashed #343434;
-    padding:25px 0; 
+.edu-details h3+p {
+  font-style: italic;
 }
-.divider >section:last-of-type{
-    border:none;
+
+.edu-details h3~p {
+  margin: 0;
+}
+
+.divider>section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+
+.divider>section:last-of-type {
+  border: none;
 }
 
 /*-------Profile------------------*/
-header{
-    background:#2F3061 ;
-    color:#F7FFF7;
-    
+header {
+  background: #2F3061;
+  color: #F7FFF7;
+
 }
 
 
@@ -112,244 +119,347 @@ header{
 
 
 /*-------Projects------------------*/
-.projects{
-    background:#F7FFF7;
+.projects {
+  background: #F7FFF7;
 }
 
-.projects a{
-    color:#343434;
+.projects a {
+  color: #343434;
 }
 
-.projects .btn{
-    color:#F7FFF7;
-    background:#2F3061;
-    text-decoration: none;
-    padding:6px;
-    border-radius: 4px;
-    display: inline-block;
+.projects .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-.projects .btn:hover{
-    background:rgba(47,48,97,80%);
-    
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+
 
 }
 
-.project-item{
-    overflow: hidden;
-   
-   
-    
+.project-item {
+  overflow: hidden;
+
+
+
 }
 
 
-.project-item h3{
-    margin-top:0;
+.project-item h3 {
+  margin-top: 0;
 }
 
 /* self clear must be added to the parent element*/
 
-/*-------Certifications---------------*/ 
-.certifi{
-    background:#A1C6D7;
-    
-}
-.certifi img{
-    margin: 5px;
-    
+/*-------Certifications---------------*/
+.certifi {
+  background: #A1C6D7;
+
 }
 
+.certifi img {
+  margin: 5px;
+
+}
 
 
-  .certdetails{
-    margin-top:0;
-   
-  }
-   .details img{
-    margin-left:0;
-    /* padding-right: 20px; */
-    /* text-align: center; */
-  } 
 
-.cert-carousel{
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-top:10px;
-  --arrow-size:44px;
-  padding:6px 0;
+.certdetails {
+  margin-top: 0;
+
+}
+
+.details img {
+  margin-left: 0;
+  /* padding-right: 20px; */
+  /* text-align: center; */
+}
+
+.proj-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  --arrow-size: 44px;
+  padding: 6px 0;
 }
 
 /* viewport holds the visible window */
-.carousel-viewport{
-  overflow:hidden;
-  flex:1 1 auto;
-  -webkit-overflow-scrolling: touch; /* smoother on iOS */
+.carousel-viewport {
+  padding:'10px';
+  overflow: hidden;
+  flex: 1 1 auto;
+  -webkit-overflow-scrolling: touch;
+  /* smoother on iOS */
+}
+
+.carousel-overlay .btn {
+  width: fit-content;     
+  max-width: 200px; 
+  margin-top: 8px;
 }
 
 /* track contains slides in a row and will be translated */
-.carousel-track{
-  display:flex;
-  gap:18px;
-  transition:transform 420ms cubic-bezier(.22,.9,.44,1);
-  will-change:transform;
-  padding-bottom:10px;
-  align-items:stretch;
+.carousel-track {
+  display: flex;
+  gap: 18px;
+  transition: transform 600ms cubic-bezier(.22, .9, .44, 1);
+  will-change: transform;
+  padding-bottom: 10px;
+  align-items: stretch;
 }
 
-/* single slide card */
-.carousel-slide{
-  min-width:280px;    /* control how many slides are visible */
-  max-width:340px;
-  background:#ffffff;
-  border-radius:12px;
-  box-shadow:0 10px 24px rgba(16,24,40,0.06);
-  overflow:hidden;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  cursor:pointer;
-  border:1px solid rgba(16,24,40,0.04);
-  transition:transform 260ms ease, box-shadow 260ms ease;
+/* single slide card: full width so only one visible at a time */
+.carousel-slide {
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.06);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid rgba(16, 24, 40, 0.04);
+  transition: transform 260ms ease, box-shadow 260ms ease;
   -webkit-tap-highlight-color: transparent;
 }
 
 /* hover / focus lift */
-.carousel-slide:focus-within,
-.carousel-slide:hover{
-  transform:translateY(-6px);
-  box-shadow:0 18px 38px rgba(16,24,40,0.12);
-}
+/* .carousel-slide:focus-within,
+.carousel-slide:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(16, 24, 40, 0.12);
+} */
 
 /* image area */
-.slide-media{
-  height:200px;
-  overflow:hidden;
-  background:#efefef;
+.slide-media {
+  height: 340px;
+  overflow: hidden;
+  background: #ffffff;
 }
-.slide-media img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform 420ms ease;
+
+.slide-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease;
 }
-.carousel-slide:hover .slide-media img{
-  transform:scale(1.03);
+
+.carousel-slide:hover .slide-media img {
+  transform: scale(1.03);
 }
 
 /* overlay that appears on hover (semi-transparent black) */
-.slide-overlay{
-  position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  padding:16px;
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
   /* gradient gives a smooth fade into the caption */
-  background:linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.62) 100%);
-  color:#fff;
-  opacity:0;
-  transition:opacity 200ms ease, transform 200ms ease;
-  pointer-events:none; /* clicks pass through when not visible */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.65) 100%);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 200ms ease, transform 200ms ease;
+  pointer-events: none;
+  /* clicks pass through when not visible */
 }
-.carousel-slide:hover .slide-overlay,
-.carousel-slide:focus-within .slide-overlay{
-  opacity:1;
-  pointer-events:auto;
+
+.carousel-slide:hover .carousel-overlay,
+.carousel-slide:focus-within .carousel-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
-.slide-overlay h4{
-  margin:0 0 6px 0;
-  font-size:1rem;
-  letter-spacing:0.2px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+
+.carousel-overlay h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
-.slide-overlay p{
-  margin:0;
-  font-size:0.9rem;
-  line-height:1.25;
+
+.carousel-overlay p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.view-button {
+  display: inline-block;
+  background-color: #2F3061;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.carousel-slide .slide-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  /* matches existing, change if you want */
+  overflow: hidden;
+}
+
+.carousel-slide .slide-media img {
+  width: auto !important;
+  /* override global width:300px */
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+  margin: 0;
+  transition: transform 420ms ease;
+  /* keep subtle hover zoom if you want */
+}
+
+.carousel-slide:hover .slide-media img {
+  transform: scale(1.5);
+  /* small, non-cropping zoom */
 }
 
 /* caption area below image for static summary (optional) */
-.slide-caption{
-  padding:12px 14px 18px;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  background:linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+.meta {
+  padding: 12px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
 }
-.slide-caption h5{
-  margin:0;
-  font-size:0.98rem;
-  color:#2f3061;
+
+.meta h5 {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #2f3061;
 }
-.slide-caption p{
-  margin:0;
-  font-size:0.87rem;
-  color:rgba(52,52,52,0.8);
+
+.meta p {
+  margin: 0;
+  font-size: 0.87rem;
+  color: rgba(52, 52, 52, 0.8);
 }
 
 /* arrows */
-.carousel-arrow{
-  background:transparent;
-  border:none;
-  width:var(--arrow-size);
-  height:var(--arrow-size);
-  display:grid;
-  place-items:center;
-  font-size:22px;
-  padding:6px 8px;
-  cursor:pointer;
-  color:#2F3061;
-  border-radius:10px;
-  transition:background 160ms ease, transform 140ms ease;
-  user-select:none;
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  padding: 6px 8px;
+  cursor: pointer;
+  color: #2F3061;
+  border-radius: 10px;
+  transition: background 160ms ease, transform 140ms ease;
+  user-select: none;
 }
-.carousel-arrow:focus{
-  outline:2px solid rgba(47,48,97,0.12);
+
+.carousel-arrow:focus {
+  outline: 2px solid rgba(47, 48, 97, 0.12);
 }
-.carousel-arrow:hover{
-  background:rgba(47,48,97,0.06);
-  transform:translateY(-2px);
+
+.carousel-arrow:hover {
+  background: rgba(47, 48, 97, 0.06);
+  transform: translateY(-2px);
 }
-.carousel-arrow[disabled]{
-  opacity:0.35;
-  cursor:default;
+
+.carousel-arrow[disabled] {
+  opacity: 0.35;
+  cursor: default;
 }
 
 /* dots (indicator) */
-.carousel-dots{
-  display:flex;
-  gap:8px;
-  justify-content:center;
-  margin-top:12px;
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
 }
-.carousel-dots button{
-  width:10px;height:10px;border-radius:50%;border:none;background:rgba(16,24,40,0.12);cursor:pointer;padding:0;
-}
-.carousel-dots button.active{background:#2F3061}
 
-/* small-screen behavior: show fewer slides and allow full width */
-@media all and (max-width:1000px){
-  .carousel-slide{min-width:260px}
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(16, 24, 40, 0.12);
+  cursor: pointer;
+  padding: 0;
 }
-@media all and (max-width:760px){
-  .carousel-slide{min-width:78%; max-width:78%; border-radius:10px}
-  .carousel-arrow{display:none} /* hide arrows on very small screens - rely on touch swipe */
-  .cert-carousel{padding-left:6px;padding-right:6px}
+
+.carousel-dots button.active {
+  background: #2F3061
 }
-@media all and (max-width:420px){
-  .slide-media{height:150px}
-  .carousel-slide{min-width:84%}
+
+/* small-screen behavior: keep single-card view but reduce heights */
+@media all and (max-width:1000px) {
+  .slide-media {
+    height: 300px
+  }
+}
+
+@media all and (max-width:760px) {
+  .slide-media {
+    height: 240px
+  }
+
+  .carousel-arrow {
+    display: none
+  }
+
+  /* hide arrows on very small screens - rely on touch swipe */
+  .cert-carousel {
+    padding-left: 6px;
+    padding-right: 6px
+  }
+}
+
+@media all and (max-width:420px) {
+  .slide-media {
+    height: 180px
+  }
+}
+
+@media (min-width: 900px) {
+  .carousel-slide .slide-media img { max-height: 340px; }
+}
+@media (max-width: 900px) {
+  .carousel-slide .slide-media img { max-height: 300px; }
+}
+@media (max-width: 420px) {
+  .carousel-slide .slide-media img { max-height: 180px; }
 }
 
 /* Accessible focus ring for keyboard users */
-.carousel-slide:focus-within{outline:3px solid rgba(47,48,97,0.08);outline-offset:4px}
+.carousel-slide:focus-within {
+  outline: 3px solid rgba(47, 48, 97, 0.08);
+  outline-offset: 4px
+}
 
 /* make sure the content-wrap sizing remains consistent with your layout */
-.content-wrap{max-width:900px; width:85%; margin:0 auto; padding:60px 0}
- 
+.content-wrap {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0
+}
 
 
 /*-------Education------------------*/
@@ -359,77 +469,85 @@ background:url() no-repeat top-right/cover
 position always followed by size . if no position- use long hand property for size
 */
 
-.education{
-    background:url(./images/sharon-mccutcheon-unsplash.jpg) no-repeat right/cover;
-    padding-bottom: 100px;
+.education {
+  background: url(./images/sharon-mccutcheon-unsplash.jpg) no-repeat right/cover;
+  padding-bottom: 100px;
 }
 
-.education > p{
-    width:50%;
+.education>p {
+  width: 50%;
 }
 
 
 /*-------contact info------------------*/
 
-footer{
-    background:#343434;
-    color:#F7FFF7;   
+footer {
+  background: #343434;
+  color: #F7FFF7;
 }
 
-.contact-list{
-    list-style-type: none;
-    padding:0;  
+.contact-list {
+  list-style-type: none;
+  padding: 0;
 }
 
 
-.contact-list a{
-    padding:20px;
-    display:inline-block;/* inline contents - not reponsive to padding and margin*/
+.contact-list a {
+  padding: 20px;
+  display: inline-block;
+  /* inline contents - not reponsive to padding and margin*/
 }
 
-.contact-list a:hover{
-    text-decoration: none; /*no underline for the linK when hover over*/
+.contact-list a:hover {
+  text-decoration: none;
+  /*no underline for the linK when hover over*/
 }
 
 /*-------responsive------------------*/
-@media all and (min-width:550px){
-    header,footer{
-        text-align: center;
-    }
-    .project-item img{
-        margin-right: 20px;
-        float: left;
-    }
-    .certifyimg {
-        display: grid;
-        grid-template-columns:auto auto auto;
-        padding: 10px;
-        padding-left:0;
-        column-gap: 20px;
-      }
-      .contact-list{
-        display:flex;
-        justify-content: center;
-    
-    }
+@media all and (min-width:550px) {
+
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .project-item img {
+    margin-right: 20px;
+    float: left;
+  }
+
+  .certifyimg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    padding-left: 0;
+    column-gap: 20px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: center;
+
+  }
 }
-        
-
-@media all and (max-width:549px){
-    h1{
-        font-size: 65px;
-        line-height:1;
-        margin-bottom: 15px;
-       
-    }
-    h2{
-        line-height:1;
-    }
 
 
-    .contact-list a{
-        padding:5px;
-    }
+@media all and (max-width:549px) {
+  h1 {
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 15px;
+
+  }
+
+  h2 {
+    line-height: 1;
+  }
+
+
+  .contact-list a {
+    padding: 5px;
+  }
 }
 
 

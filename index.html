@@ -42,23 +42,182 @@
       </div>
     </nav>
 
-    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+
+
+    <!-- ********************  PROJECTS CAROUSEL  ********************* -->
 
     <section id="projectspace" class="projects">
       <div class="content-wrap divider">
         <h2>Featured Projects</h2>
         <p>View selected projects below. More information can be found at my Github repository</p>
 
-        <!-- Project 1 -->
+        <!-- Carousel wrapper - note id used by the JS -->
+        <div class="proj-carousel carousel-container" id="projCarousel" aria-label="Projects carousel">
+          <!-- left control -->
+          <button class="carousel-arrow left carousel-button prev" aria-label="Projects certificate">&#10094;</button>
+
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+
+              <!-- Slide 1 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/travelagency.png" alt="Travel agency project screen shot">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h4>Travel agency booking page</h4>
+                    <p>Used Html, CSS, and Bootstrap CSS to complete this project</p>
+                    <a class="btn" href="https://dineshkumar-ddk.github.io/TravelAgency/" target="_blank">View Live</a>
+                  </div>
+                </div>
+                <!-- <div class="meta">
+                  <h5>Artificial Intelligence — Course 1</h5>
+                  <p>Certificate covering ML basics and practical exercises.</p>
+                </div> -->
+              </article>
+
+              <!-- Slide 2 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/mojito_cocktail.png" alt="Mojito hero image">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h3>CockTail Business Landing Page</h3>
+                    <p>An animated, tropical-themed cocktail landing page built with GSAP, blending bold typography and
+                      smooth
+                      transitions for an immersive visual experience</p>
+                    <a class="btn" href="https://gsa-pproject.vercel.app/" target="_blank">View Live</a>
+                  </div>
+                </div>
+                <!-- <div class="meta">
+                  <h5>HDCA Program — BSS</h5>
+                  <p>Deep fundamentals and Postgres skills.</p>
+                </div> -->
+              </article>
+
+              <!-- Slide 3 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/netflix.png" alt="Netflix login page">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h3>Netflix login page Clone</h3>
+                    <p>This project resembles the Netflix login page</p>
+                    <a class="btn" href="https://dineshkumar-ddk.github.io/NetflixLoginclonerepo/" target="_blank">View
+                      Live</a>
+                    <!-- <a class="view-button" href="#" target="_blank">View</a> -->
+                  </div>
+                </div>
+                <!-- <div class="meta">
+                  <h5>Web Dev Bootcamp</h5>
+                  <p>Hands-on projects and real-world stacks.</p>
+                </div> -->
+              </article>
+
+              <!-- Slide 4 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/studentcrud.png">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h3>Full-Stack CRUD Application</h3>
+                    <p>A full-stack CRUD application built using React (frontend), Node.js and Express (backend), and
+                      styled with
+                      Material-UI</p>
+                    <a class="btn" href="https://student-register-crud.vercel.app/" target="_blank">View Live</a>
+                  </div>
+                </div>
+
+              </article>
+
+              <!-- Slide 5 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/sushi.png">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h3>Sushi Restaurant</h3>
+                    <p>
+                      A clean, responsive landing page built only with HTML and CSS to
+                      strengthen fundamental layout and styling skills.
+                    </p>
+                    <a class="btn" href="https://merry-conkies-a41c90.netlify.app/" target="_blank">View Live</a>
+                  </div>
+                </div>
+
+              </article>
+              <!-- Slide 6 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/ticketbounty.png">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h3>Ticket Bounty</h3>
+                    <p>
+                      A Next.js SaaS-style ticket management platform (in progress)
+                      created to deepen my understanding of Next.js routing,
+                      API routes, and server-side rendering.
+                    </p>
+                    <a class="btn" href="https://ticketsmanagement.vercel.app/" target="_blank">View Live</a>
+                  </div>
+                </div>
+
+              </article>
+              <!-- Slide 7 -->
+              <article class="carousel-slide">
+                <div class="carousel-slide-inner">
+                  <div class="slide-media">
+                    <img src="images/clipboard.png">
+                  </div>
+                  <div class="carousel-overlay">
+                    <h3>Clipboard</h3>
+                    <p>
+                      A modern, fully responsive front-end built with Tailwind CSS to
+                      practise utility-first design and rapid component styling.
+                    </p>
+                    <a class="btn" href="https://extensionview.netlify.app/" target="_blank">View Live</a>
+                  </div>
+                </div>
+
+              </article>
+
+
+            </div>
+          </div>
+
+          <!-- right control -->
+          <button class="carousel-arrow right carousel-button next" aria-label="Next certificate">&#10095;</button>
+        </div>
+
+        <!-- dots / indicators -->
+        <div class="carousel-dots" aria-hidden="false"></div>
+
+      </div>
+    </section>
+
+
+    <!-- ********************  CERTIFICATE PROJECTS   ********************* -->
+
+    <section id="certification" class="certifi">
+      <div class="content-wrap divider">
+        <h2>Certifications</h2>
+
+        <!-- certificate 1 -->
         <section class="project-item">
 
-          <img src="images/travel agency project.jpeg" alt="travel agency project">
-          <h3>Travel agency booking page</h3>
-          <p>Used Html, CSS, and Bootstrap CSS to complete this project</p>
-          <a class="btn" href="https://dineshkumar-ddk.github.io/TravelAgency/" target="_blank">View Live</a>
+          <img src="images/certifications/BSS.png" alt="Bharat Sevak Samaj Program">
+          <h3>Honours Diploma in Computer Application</h3>
+          <p> Completed foundations of computer science with practical experience through this program from
+            Bharat Sevak Samaj. Got clear idea of how computer application works </p>
         </section>
 
-        <!-- Project 2 -->
+        <!-- certificate 2 -->
         <!--           <section class="project-item">
             
             <img src="images/portfolio project.jpeg" alt="portfolio">
@@ -67,102 +226,47 @@
             <a class="btn" href="#" target="_blank">View in Github</a>
           </section> -->
 
-        <!-- Project 2 -->
+        <!-- certificate 2 -->
         <section class="project-item">
-
-          <img src="images/netflixclone.jpeg" alt="Netflix login page">
-          <h3>Netflix login page Clone</h3>
-          <p>This project resembles the Netflix login page</p>
-          <a class="btn" href="https://dineshkumar-ddk.github.io/NetflixLoginclonerepo/" target="_blank">View Live</a>
-
+          <img src="images/certifications/HTML.png" alt="HTML certificate">
+          <h3>HTML Certification Program</h3>
+          <p>Covered semantic HTML5 and accessibility standards,
+            which I apply daily when building responsive React/Next.js UIs.</p>
         </section>
-        <!-- Project 3 -->
+        <!-- certificate 3 -->
         <section class="project-item">
-
-          <img src="images/Mojito.png" alt="Mojito hero image">
-          <h3>CockTail Business Landing Page</h3>
-          <p>An animated, tropical-themed cocktail landing page built with GSAP, blending bold typography and smooth
-            transitions for an immersive visual experience</p>
-          <a class="btn" href="https://gsa-pproject.vercel.app/" target="_blank">View Live</a>
-
+          <img src="images/certifications/CSS.png" alt="CSS certificate">
+          <h3>CSS</h3>
+          <p> Mastered CSS3 layout techniques, animations and cross-browser best practices,
+            enabling pixel-perfect, performant front-end interfaces.</p>
         </section>
 
-        <!-- Project 4 -->
+        <!-- certificate 4 -->
         <section class="project-item">
+          <img src="images/certifications/REACT.png" alt="ReactJS certificate">
+          <h3>React JS</h3>
+          <p> Learned component-driven architecture, hooks and state management patterns
+            that I now use to build production-ready React/Next.js applications.</p>
+        </section>
 
-          <img src="images/Studentmanagement.png">
-          <h3>Full-Stack CRUD Application</h3>
-          <p>A full-stack CRUD application built using React (frontend), Node.js and Express (backend), and styled with
-            Material-UI</p>
-          <a class="btn" href="https://student-register-crud.vercel.app/" target="_blank">View Live</a>
+        <!-- certificate 5 -->
+        <section class="project-item">
+          <img src="images/certifications/OOPS.png" alt="OOPS certificate">
+          <h3>OOPS</h3>
+          <p> Strengthened understanding of OOP concepts such as encapsulation,
+            inheritance and polymorphism—skills I leverage in TypeScript,
+            Node.js and scalable component design</p>
+        </section>
 
+        <!-- certificate 6 -->
+        <section class="project-item">
+          <img src="images/certifications/JAVA.png" alt="Full-Stack-Development">
+          <h3>Full Stack Development</h3>
+          <p>Hands-on exposure to Java, Node.js and SQL, giving me the full-stack perspective
+            needed to integrate REST APIs and optimise end-to-end performance.</p>
         </section>
       </div>
     </section>
-
-
-
-    <!-- ******************  CERTIFICATION ****************** -->
-    <section id="certification" class="certifi">
-<div class="content-wrap divider">
-<h2>Certifications</h2>
-
-
-<!-- Carousel wrapper -->
-<div class="cert-carousel" aria-label="Certifications carousel">
-<button class="carousel-arrow left" aria-label="Previous certificate">&#10094;</button>
-
-
-<div class="carousel-viewport">
-<div class="carousel-track">
-
-
-<!-- Slide 1 -->
-<article class="carousel-slide">
-<div class="slide-media">
-<img src="images/ARTIFICIAL INTELLIGENCE (AI)/1.jpg" alt="AI certificate 1">
-</div>
-<div class="slide-overlay">
-<h4>Artificial Intelligence — Course 1</h4>
-<p>Complete foundations of AI, including core ML concepts and hands-on labs.</p>
-</div>
-</article>
-
-
-<!-- Slide 2 -->
-<article class="carousel-slide">
-<div class="slide-media">
-<img src="images/ARTIFICIAL INTELLIGENCE (AI)/2.jpg" alt="AI certificate 2">
-</div>
-<div class="slide-overlay">
-<h4>HDCA Program — BSS</h4>
-<p>Strong computer science fundamentals and practical Postgres experience.</p>
-</div>
-</article>
-
-
-<!-- Add more slides as needed -->
-<article class="carousel-slide">
-<div class="slide-media">
-<img src="images/ARTIFICIAL INTELLIGENCE (AI)/3.jpg" alt="AI certificate 3">
-</div>
-<div class="slide-overlay">
-<h4>Web Dev Bootcamp</h4>
-<p>Full-stack web development using HTML, CSS, JS and backend basics.</p>
-</div>
-</article>
-
-
-</div>
-</div>
-
-
-<button class="carousel-arrow right" aria-label="Next certificate">&#10095;</button>
-</div>
-
-
-</div>
-</section>
 
 
     <!-- ******************  EDUCATION ****************** -->
