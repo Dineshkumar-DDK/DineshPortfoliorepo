@@ -170,6 +170,185 @@ header{
     /* padding-right: 20px; */
     /* text-align: center; */
   } 
+
+.cert-carousel{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:10px;
+  --arrow-size:44px;
+  padding:6px 0;
+}
+
+/* viewport holds the visible window */
+.carousel-viewport{
+  overflow:hidden;
+  flex:1 1 auto;
+  -webkit-overflow-scrolling: touch; /* smoother on iOS */
+}
+
+/* track contains slides in a row and will be translated */
+.carousel-track{
+  display:flex;
+  gap:18px;
+  transition:transform 420ms cubic-bezier(.22,.9,.44,1);
+  will-change:transform;
+  padding-bottom:10px;
+  align-items:stretch;
+}
+
+/* single slide card */
+.carousel-slide{
+  min-width:280px;    /* control how many slides are visible */
+  max-width:340px;
+  background:#ffffff;
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(16,24,40,0.06);
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  cursor:pointer;
+  border:1px solid rgba(16,24,40,0.04);
+  transition:transform 260ms ease, box-shadow 260ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* hover / focus lift */
+.carousel-slide:focus-within,
+.carousel-slide:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 38px rgba(16,24,40,0.12);
+}
+
+/* image area */
+.slide-media{
+  height:200px;
+  overflow:hidden;
+  background:#efefef;
+}
+.slide-media img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform 420ms ease;
+}
+.carousel-slide:hover .slide-media img{
+  transform:scale(1.03);
+}
+
+/* overlay that appears on hover (semi-transparent black) */
+.slide-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:16px;
+  /* gradient gives a smooth fade into the caption */
+  background:linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.62) 100%);
+  color:#fff;
+  opacity:0;
+  transition:opacity 200ms ease, transform 200ms ease;
+  pointer-events:none; /* clicks pass through when not visible */
+}
+.carousel-slide:hover .slide-overlay,
+.carousel-slide:focus-within .slide-overlay{
+  opacity:1;
+  pointer-events:auto;
+}
+.slide-overlay h4{
+  margin:0 0 6px 0;
+  font-size:1rem;
+  letter-spacing:0.2px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+.slide-overlay p{
+  margin:0;
+  font-size:0.9rem;
+  line-height:1.25;
+}
+
+/* caption area below image for static summary (optional) */
+.slide-caption{
+  padding:12px 14px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  background:linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+}
+.slide-caption h5{
+  margin:0;
+  font-size:0.98rem;
+  color:#2f3061;
+}
+.slide-caption p{
+  margin:0;
+  font-size:0.87rem;
+  color:rgba(52,52,52,0.8);
+}
+
+/* arrows */
+.carousel-arrow{
+  background:transparent;
+  border:none;
+  width:var(--arrow-size);
+  height:var(--arrow-size);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+  padding:6px 8px;
+  cursor:pointer;
+  color:#2F3061;
+  border-radius:10px;
+  transition:background 160ms ease, transform 140ms ease;
+  user-select:none;
+}
+.carousel-arrow:focus{
+  outline:2px solid rgba(47,48,97,0.12);
+}
+.carousel-arrow:hover{
+  background:rgba(47,48,97,0.06);
+  transform:translateY(-2px);
+}
+.carousel-arrow[disabled]{
+  opacity:0.35;
+  cursor:default;
+}
+
+/* dots (indicator) */
+.carousel-dots{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-top:12px;
+}
+.carousel-dots button{
+  width:10px;height:10px;border-radius:50%;border:none;background:rgba(16,24,40,0.12);cursor:pointer;padding:0;
+}
+.carousel-dots button.active{background:#2F3061}
+
+/* small-screen behavior: show fewer slides and allow full width */
+@media all and (max-width:1000px){
+  .carousel-slide{min-width:260px}
+}
+@media all and (max-width:760px){
+  .carousel-slide{min-width:78%; max-width:78%; border-radius:10px}
+  .carousel-arrow{display:none} /* hide arrows on very small screens - rely on touch swipe */
+  .cert-carousel{padding-left:6px;padding-right:6px}
+}
+@media all and (max-width:420px){
+  .slide-media{height:150px}
+  .carousel-slide{min-width:84%}
+}
+
+/* Accessible focus ring for keyboard users */
+.carousel-slide:focus-within{outline:3px solid rgba(47,48,97,0.08);outline-offset:4px}
+
+/* make sure the content-wrap sizing remains consistent with your layout */
+.content-wrap{max-width:900px; width:85%; margin:0 auto; padding:60px 0}
  
 
 
@@ -252,5 +431,6 @@ footer{
         padding:5px;
     }
 }
+
 
 /* webfx.com--to change hex to rgb */
