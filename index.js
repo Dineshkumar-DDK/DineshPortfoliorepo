@@ -32,7 +32,7 @@ $(function () {
       const dotsWrap = document.querySelector('.carousel-dots');
       let currentIndex = 0;
       const slideCount = slides.length;
-      const autoplayDelay = (opts && opts.delay) || 1500; // milliseconds
+      const autoplayDelay = (opts && opts.delay) || 2500; // milliseconds
       let timer = null;
 
       // ensure each slide occupies container width (one slide visible)
